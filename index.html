@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Pugazhendhi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <div class="logo">Pugazh</div>
+        <nav>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="content">
+            <h1>Hi, I'm <span class="highlight">Pugazhendhi</span></h1>
+            <h2>A Fullstack Developer</h2>
+            <p>As a B.Tech Information Technology student at Vel Tech Multi Tech, I have developed a strong foundation in IT principles and practices. I'm interested in problem-solving.</p>
+        </div>
+        <div class="image-container">
+            <img src="pugazh3.png" alt="Profile Picture">
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="experience-item">
+            <h3>AWS & DEVOPS Intern - Tech Power Solutions</h3>
+            <p>Developed cloud solutions using AWS services (EC2, S3, RDS) for scalable applications.
+            Implemented CI/CD pipelines using Jenkins and Docker to automate deployment workflows.</p>
+        </div>
+        <div class="experience-item">
+            <h3>Web Developer Intern - Edify Techno Solutions</h3>
+            <p>Developed and optimized responsive web pages using HTML, CSS, and JavaScript. Worked on backend functionalities using Java, Servlets, and JSP to enhance website performance.</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-item">
+            <h3>Car Rental System</h3>
+            <p>Developed a web-based car rental system using HTML, CSS, Java, Servlet, JSP, and SQL.
+                Implemented features like car viewing, booking history, and user registration.
+                Integrated SQL database for managing bookings and user information.</p>
+        </div>
+        <div class="project-item">
+            <h3>Facial Recognition-Based Attendance Tracker</h3>
+            <p>Designed and developed an AI-powered attendance system using face detection technology.
+                Implemented real-time face recognition to automate attendance marking.
+                Utilized machine learning algorithms for accurate identification.</p>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <h2>Education</h2>
+        <div class="education-item">
+            <h3>B.Tech in Information Technology</h3>
+            <p>Vel Tech Multi Tech Dr. Rangarajan Dr. Sakunthala Engineering College</p>
+            <p>CGPA - 8.01 (Till 5th Semester)</p>
+            <p>2022 - 2026</p>
+        </div>
+        <div class="education-item">
+            <h3>HSC</h3>
+            <p>Maharshi Hr Secondary School</p>
+            <p>Percentage - 87.6%</p>
+            <p>2021-2022</p>
+        </div>
+        <div class="education-item">
+            <h3>SSLC</h3>
+            <p>St. Antony Matriculation School</p>
+            <p>Percentage - 79.2%</p>
+            <p>2019-2020</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-details">
+            <p>Email: <a href="mailto:pugazhpugazh2005@gmail.com">pugazhpugazh2005@gmail.com</a></p>
+            <p>Phone: <a href="tel:+916382876268">+91 6382876268</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/pugazendhis19052005" target="_blank">linkedin.com/in/PugazendhiS</a></p>
+            <p>GitHub: <a href="https://github.com/pugazendhi123" target="_blank">github.com/pugazendhi123</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Pugazendhi. All rights reserved.</p>
+    </footer>
+
+    <!-- Smooth Scrolling Fix -->
+    <script>
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(event) {
+                event.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetSection = document.getElementById(targetId);
+                
+                if (targetSection) {
+                    window.scrollTo({
+                        top: targetSection.offsetTop - 80, // Offset for fixed navbar
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
